@@ -39,17 +39,18 @@ frontend:
   phases:
     preBuild:
       commands:
+        - cd frontend/retailcloud-web
         - npm install
     build:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: dist/retailcloud-web/browser
+    baseDirectory: frontend/retailcloud-web/dist/retailcloud-web/browser
     files:
       - '**/*'
   cache:
     paths:
-      - node_modules/**/*
+      - frontend/retailcloud-web/node_modules/**/*
 
 
 
