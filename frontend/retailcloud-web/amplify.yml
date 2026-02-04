@@ -1,0 +1,36 @@
+# version: 1
+# frontend:
+#   phases:
+#     preBuild:
+#       commands:
+#         - npm ci
+#     build:
+#       commands:
+#         - npm run build
+#   artifacts:
+#     baseDirectory: dist/retailcloud-web/browser
+#     files:
+#       - '**/*'
+#   cache:
+#     paths:
+#       - node_modules/**/*
+
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - cd frontend/retailcloud-web
+        - npm ci
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: frontend/retailcloud-web/dist/retailcloud-web/browser
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - frontend/retailcloud-web/node_modules/**/*
+
+
