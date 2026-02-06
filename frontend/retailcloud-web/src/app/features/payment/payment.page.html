@@ -91,7 +91,7 @@
                     }
 
                     <!-- Payment Button -->
-                    <div class="d-grid gap-2">
+                    <div class="d-grid">
                         <button class="btn btn-success btn-lg" (click)="processPayment()" [disabled]="processing()">
                             @if (processing()) {
                             <span class="spinner-border spinner-border-sm me-2"></span>
@@ -99,11 +99,6 @@
                             } @else {
                             Pay with Cash
                             }
-                        </button>
-
-                        <button class="btn btn-outline-secondary" routerLink="/cart" [disabled]="processing()">
-
-                            Back to Cart
                         </button>
                     </div>
 

@@ -1,7 +1,4 @@
 <div class="container py-4">
-    <div class="d-flex justify-content-center mb-4">
-        <input class="form-control" style="max-width: 500px" placeholder="Search products..." [(ngModel)]="query" />
-    </div>
 
     <div *ngIf="error()" class="alert alert-danger">
         <strong>Error:</strong> {{ error() }}
