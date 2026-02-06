@@ -63,7 +63,7 @@
                                 <div class="d-flex justify-content-between">
                                     <span class="fw-bold">Total Amount:</span>
                                     <span class="fw-bold text-primary fs-5">
-                                        ${{ formatMoney(orderDetails()?.totalAmount || 0) }}
+                                        LKR {{ formatMoney(orderDetails()?.totalAmount || 0) }}
                                     </span>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@
                                         <div class="fw-semibold">{{ item.name || item.productId }}</div>
                                         <div class="small text-muted">Qty: {{ item.qty }}</div>
                                     </div>
-                                    <div class="fw-semibold">${{ formatMoney(item.price * item.qty) }}</div>
+                                    <div class="fw-semibold">LKR {{ formatMoney(item.price * item.qty) }}</div>
                                 </div>
                             </div>
                             }

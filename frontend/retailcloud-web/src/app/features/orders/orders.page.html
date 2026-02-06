@@ -43,7 +43,7 @@
 
                     <div class="d-flex justify-content-between mb-2">
                         <div class="text-muted">Total Spent</div>
-                        <div class="fw-semibold">${{ money(totalSpent()) }}</div>
+                        <div class="fw-semibold">LKR {{ money(totalSpent()) }}</div>
                     </div>
 
                     <div class="text-muted small mt-3">
@@ -71,7 +71,7 @@
                                 </div>
 
                                 <div class="text-end">
-                                    <div class="fw-bold">${{ money(o.totalAmount ?? o.total ?? 0) }}</div>
+                                    <div class="fw-bold">LKR {{ money(o.totalAmount ?? o.total ?? 0) }}</div>
                                     <span class="badge text-bg-success" *ngIf="statusOf(o) as s">{{ s }}</span>
                                 </div>
                             </div>

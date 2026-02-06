@@ -15,7 +15,7 @@ import { CommonModule } from '@angular/common';
       
       <div class="product-info">
         <h6 class="product-name">{{ product?.name || product?.title || ('Product ' + (product?.productId || product?.id || '')) }}</h6>
-        <div class="product-price">\${{ product?.price ?? 0 }}</div>
+        <div class="product-price">LKR {{ product?.price ?? 0 }}</div>
         <button class="btn btn-add-cart w-100 mt-3"
                 (click)="add.emit(product)"
                 [disabled]="disabled">
